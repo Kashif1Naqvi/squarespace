@@ -9,7 +9,7 @@ const Volunteer =()=> {
                     <div className="mt-3 col col-sm-7 col-md-7 col-lg-7 col-xl-7 ">
                         <h1 className="font-weight-bold pt-3 mt-3 pb-3 mb-3 " >Volunteer</h1>
                         <p>Use this page to list volunteer opportunities and current job openings. Donec ultrices ex ut ante consectetur, sed varius libero pharetra. Aenean consequat orci metus, in tempus erat venenatis sed. Donec ut est et tortor rhoncus aliquet. Nulla sollicitudin, sapien quis malesuada semper, felis lectus eleifend ipsum, ultrices hendrerit turpis lorem sit amet nunc. Aenean facilisis leo sapien, eget congue justo sollicitudin at. Morbi a elit at mi pulvinar vulputate. Etiam bibendum sed lorem ut mollis.</p>
-                        <form onSubmit={(e)=>{e.preventDefault()}}>
+                        <form className="form" onSubmit={(e)=>{e.preventDefault()}}>
                             <label htmlFor="name">Name *</label><br/>
                             <input className="mr-2 " size="30" style={{height:"40px"}} type="text" />
                             <input className="mr-2 mb-3 " size="30" style={{height:"40px"}} type="text" />
@@ -19,7 +19,7 @@ const Volunteer =()=> {
                             <input type="text" className="m-2" size="5" style={{height:"45px"}} />
                             <input type="text" className="m-2" size="5" style={{height:"45px"}} />
                             <input type="text" className="m-2" size="5" style={{height:"45px"}} /><br />
-                            <h7>Address *</h7>
+                            <h5>Address *</h5>
                             <input  size="64" style={{height:"40px"}} type="text" />
                             <label htmlFor="address">Address 1</label>
                             <input  size="64" style={{height:"40px"}} type="text" />

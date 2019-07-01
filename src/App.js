@@ -10,6 +10,7 @@ import Volunteer from './components/Volunteer/Volunteer';
 import Contact from './components/Contact/Contact';
 import Donate from './components/Donate/Donate';
 import Search from './components/Search/Search';
+import Oimpact from './components/Impact/Oimpact';
 
 const  App =()=> {
   return (
@@ -58,6 +59,7 @@ const  App =()=> {
           <Route exact path="/"  component={Impact} />
           <Route path="/mission"  component={Mission} /> 
           <Route path="/partners" component={Patners} />
+          <Route path="/impact"  component={Oimpact} />
           <Route path="/programs" component={Program} />
           <Route path="/press" component={Press} />
           <Route path="/volunteer" component={Volunteer} />
