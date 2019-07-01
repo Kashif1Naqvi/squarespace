@@ -73,7 +73,7 @@ const Volunteer =()=> {
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
                             </select><br/>
-                            <input type="submit" value="Submit" className="mt-4 pt-4 mb-4 pb-4 btn btn-outline-danger rounded-circle " />
+                            <input type="submit" value="Submit" className="p-3 m-3 btn btn-outline-danger rounded " />
                         </form>
                     </div>
                 </div>    

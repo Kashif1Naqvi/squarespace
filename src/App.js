@@ -8,6 +8,8 @@ import Program from './components/Programs/Program';
 import Press from './components/Press/Press';
 import Volunteer from './components/Volunteer/Volunteer';
 import Contact from './components/Contact/Contact';
+import Donate from './components/Donate/Donate';
+import Search from './components/Search/Search';
 
 const  App =()=> {
   return (
@@ -46,20 +48,24 @@ const  App =()=> {
                 <Link to="/donate" ><button className="btn btn-outline-danger" >Donate</button></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link text-dark text-muted" to="Search" > <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png" width="20" height="20" alt="avator"/> </Link>
+                <Link to="/search" className="nav-link text-dark text-muted"> <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png" width="20" height="20" alt="avator"/> </Link>
               </li>
             </ul>
           </div>
           </div>
         </nav>
         <div className="bg-light" >
-        <Route exact path="/"  component={Impact} />
-        <Route path="/mission"  component={Mission} /> 
-        <Route path="/partners" component={Patners} />
-        <Route path="/programs" component={Program} />
-        <Route path="/press" component={Press} />
-        <Route path="/volunteer" component={Volunteer} />
-        <Route path="/contact" component={Contact} />
+          <Route exact path="/"  component={Impact} />
+          <Route path="/mission"  component={Mission} /> 
+          <Route path="/partners" component={Patners} />
+          <Route path="/programs" component={Program} />
+          <Route path="/press" component={Press} />
+          <Route path="/volunteer" component={Volunteer} />
+          <Route path="/contact" component={Contact} />
+          <div style={{backgroundColor:"#F3775C"}}  >
+          <Route path="/donate" component={Donate} />
+        </div>
+          <Route path="/search" component={Search} />
         </div>
         <Footer />
         </div>

@@ -3,7 +3,7 @@ import {programObj} from './programObj'
 const  Program =()=> {
     return (
         <div className="container bg-light" >
-            <h1 className="mt-5 mb-5 pb-5 pt-5 font-weight-bold text-dark " >Our Programs</h1>
+            <h1 className="mt-3 mb-3 pb-5 pt-5 font-weight-bold text-dark " >Our Programs</h1>
             {
                 programObj.map((program,index)=>{
                     return(

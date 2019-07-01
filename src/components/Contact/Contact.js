@@ -3,7 +3,7 @@ import React from 'react'
 const Contact =()=> {
     return (
         <div className="container" > 
-            <h1 className="mt-5 mb-5" >Contact Us</h1>
+            <h1 className="mt-3 mb-3" >Contact Us</h1>
             <p>Here is a description of how to contact us. Nam nunc tortor, arcu quis luctus in nisi sit amet, tincidunt arcu quis malesuada elit. Nulla facilisi. Phasellus pellentesque arcu quis sapien mollis pharetra.</p>
             <p>123 Demo Street</p>
             <p>Manhattan, NY 12345</p>
@@ -28,6 +28,7 @@ const Contact =()=> {
                     <label htmlFor="Message"  >Message *</label><br/>
                     <textarea  id="" cols="65" rows="4"></textarea>
                 </div>
+                <button className="p-2 m-2 btn btn-outline-danger" >Submit</button>
             </form>
         </div>
     )
