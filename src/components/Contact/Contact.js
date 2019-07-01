@@ -18,15 +18,15 @@ const Contact =()=> {
                 </div>
                 <div className="form-group">
                     <label htmlFor="email"  >Address</label><br/>
-                    <input  size="64" style={{height:"40px"}} type="text" />
+                    <input   size="64" style={{height:"40px"}} type="text" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="Subject *"  >Subject *</label><br/>
-                    <input  size="64" style={{height:"40px"}} type="text" />
+                    <input   size="64" style={{height:"40px"}} type="text" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="Message"  >Message *</label><br/>
-                    <textarea  id="" cols="65" rows="4"></textarea>
+                    <textarea   cols="65" rows="4"></textarea>
                 </div>
                 <button className="p-2 m-2 btn btn-outline-danger" >Submit</button>
             </form>

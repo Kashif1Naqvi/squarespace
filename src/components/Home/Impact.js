@@ -9,7 +9,7 @@ const Impact = () => {
   return (
 
     <div  className="container-fluid">
-      <div  style={{ backgroundImage:"url(https://images.pexels.com/photos/256401/pexels-photo-256401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)",backgroundAttachment:"fixed",backgroundSize:"cover"  ,height:"900px" }} ></div>
+      <div className="jumbotron " style={{ backgroundImage:"url(https://images.pexels.com/photos/256401/pexels-photo-256401.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)",backgroundAttachment:"fixed",backgroundSize:"cover"  ,height:"900px" }} ></div>
       <FirstContent />
       <Grid />
       <Patners />

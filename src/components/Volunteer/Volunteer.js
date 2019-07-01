@@ -10,25 +10,31 @@ const Volunteer =()=> {
                         <h1 className="font-weight-bold pt-3 mt-3 pb-3 mb-3 " >Volunteer</h1>
                         <p>Use this page to list volunteer opportunities and current job openings. Donec ultrices ex ut ante consectetur, sed varius libero pharetra. Aenean consequat orci metus, in tempus erat venenatis sed. Donec ut est et tortor rhoncus aliquet. Nulla sollicitudin, sapien quis malesuada semper, felis lectus eleifend ipsum, ultrices hendrerit turpis lorem sit amet nunc. Aenean facilisis leo sapien, eget congue justo sollicitudin at. Morbi a elit at mi pulvinar vulputate. Etiam bibendum sed lorem ut mollis.</p>
                         <form className="form" onSubmit={(e)=>{e.preventDefault()}}>
-                            <label htmlFor="name">Name *</label><br/>
-                            <input className="mr-2 " size="30" style={{height:"40px"}} type="text" />
-                            <input className="mr-2 mb-3 " size="30" style={{height:"40px"}} type="text" />
-                            <label htmlFor="email">Email Address</label><br/>
-                            <input  size="64" style={{height:"40px"}} type="text" />
+                            <div className="form-group">
+                                <label htmlFor="name">Name *</label><br/>
+                                <input className="mr-2 " size="30" style={{height:"40px"}} type="text" />
+                                <input className="mr-2 mb-3 " size="30" style={{height:"40px"}} type="text" />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="email">Email Address</label><br/>
+                                <input  size="64" className="form-control" style={{height:"40px"}} type="text" />
+                            </div>
                             <label className="mt-4" htmlFor="Phone">Phone:</label><br/>
-                            <input type="text" className="m-2" size="5" style={{height:"45px"}} />
-                            <input type="text" className="m-2" size="5" style={{height:"45px"}} />
-                            <input type="text" className="m-2" size="5" style={{height:"45px"}} /><br />
-                            <h5>Address *</h5>
-                            <input  size="64" style={{height:"40px"}} type="text" />
-                            <label htmlFor="address">Address 1</label>
-                            <input  size="64" style={{height:"40px"}} type="text" />
-                            <label htmlFor="address">Address 2</label><br/>
-                            <input className="mr-2 " placeholder="city"  size="45" style={{height:"40px"}} type="text" />
+                            <input type="text" className="m-2  " size="6" style={{height:"45px"}} />
+                            <input type="text" className="m-2  " size="6" style={{height:"45px"}} />
+                            <input type="text" className="m-2  " size="6" style={{height:"45px"}} /><br />
+                            <div className="form-group">
+                                <h5>Address *</h5>
+                                <input className="form-control" size="64" style={{height:"40px"}} type="text" />
+                            </div>                            
+                            <div className="form-group">
+                                <label htmlFor="address">Address 2</label><br/>
+                                <input className="mr-2 form-control " placeholder="city"  size="45" style={{height:"40px"}} type="text" />
+                            </div>
                             <input className="mr-2 mb-3 " placeholder="State/Province" size="15" style={{height:"40px"}} type="text" />
                             <input className="mr-2 mb-3 " size="25" style={{height:"40px"}} type="text" /> <br/>
                             <label htmlFor="zip">Zip/Postal Code</label>
-                            <input  size="64" style={{height:"40px"}} type="text" />
+                            <input  size="64" style={{height:"40px"}}  className="form-control" type="text" />
                             <label htmlFor="country">country</label>
                             <h5>Language(s) Spoken *</h5>
                             <input type="checkbox" name="Arabic" id=""/>Arabic <br/>
@@ -41,7 +47,7 @@ const Volunteer =()=> {
                             <input type="checkbox" name="other" id=""/>other <br/>
 
                             <p>Preferred Volunteer Region *</p>
-                            <select name="san francisco" >
+                            <select className="form-control" name="san francisco" >
                                 <option>California </option>
                                 <option>London </option>
                             </select>
@@ -63,13 +69,17 @@ const Volunteer =()=> {
                             <input type="checkbox" name="   Social Media Volunteer" id=""/>   Social Media Volunteer <br/>
                             <input type="checkbox" name=" General Office / Admin Assistance" id=""/> General Office / Admin Assistanceb <br/>
                             <input type="checkbox" name="  General IT / Tech Support" id=""/>  General IT / Tech Supportb <br/>
-                            <h4 className="mt-5" >Technical Skills</h4>
-                            <p>Please list any technical skills that you have</p>
-                            <textarea  id="" cols="65" rows="4"></textarea>
-                            <h3 className="mt-4" >Why would you like to volunteer with us? *</h3>
-                            <textarea  id="" cols="65" rows="4"></textarea>
+                            <div className="form-group">
+                                <h4 className="mt-5" >Technical Skills</h4>
+                                <p>Please list any technical skills that you have</p>
+                                <textarea  className="form-control" id="" cols="65" rows="4"></textarea>
+                            </div>
+                            <div className="form-group">
+                                <h3 className="mt-4" >Why would you like to volunteer with us? *</h3>
+                                <textarea className="form-control" id="" cols="65" rows="4"></textarea>
+                            </div>
                             <p  className="pt-4 display-5 " >Would you be willing to complete a personal background check? *</p>
-                            <select name="Yes" >
+                            <select className="form-control" name="Yes" >
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
                             </select><br/>
