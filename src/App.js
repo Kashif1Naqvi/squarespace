@@ -15,9 +15,9 @@ import Oimpact from './components/Impact/Oimpact';
 const  App =()=> {
   return (
     <Router>
-      <div className="container-fluid" >
+      <div  >
         <nav className=" navbar navbar-expand-md  navbar-light " >
-          <div className="container-fluid t ">
+          <div className="container-fluid  ">
               <Link className="navbar-brand text-dark text-muted" to="/" >Impact</Link>
               <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarSupport" >
                   <span className="glyphicon glyphicon-plus" style={{color:"red"}} >+</span>

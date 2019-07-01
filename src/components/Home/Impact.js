@@ -27,17 +27,19 @@ const Impact = () => {
       </div>
       </div>
     
-      <div className="row">
-        <div className="col col-sm-6  col-md-6 col-lg-6 col-xl-6  ">
-          <figure className="figure">
-            <img className="figure-img img-fluid"  src="https://images.pexels.com/photos/1007066/pexels-photo-1007066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""/>   
-          </figure>
-        </div>
-        <div  style={{backgroundColor:"#42AEB8",height:"980px"}} className=" col  col-sm-6  col-md-6 col-lg-6 col-xl-6">
-          <div className="pt-5 mt-5" >
-           <h1 className="mt-5 pt-5 font-weight-bold text-white " >Our Team</h1>
-            <p className="  text-white ">Here is a description of your team. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis turpis vel ex semper.</p>
-            <a className=" font-weight-bold text-white " href="/volunteer" >Join Our Team</a>
+      <div className="container-fluid"> 
+        <div className="row">
+          <div className="col col-sm-6 col-md-6 col-lg-6 col-xl-6  ">
+            <figure className="figure">
+              <img className="figure-img img-fluid"  src="https://images.pexels.com/photos/1007066/pexels-photo-1007066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="avatar"/>   
+            </figure>
+          </div>
+          <div  style={{backgroundColor:"#42AEB8",height:"auto"}} className="col  col-sm-6  col-md-6 col-lg-6 col-xl-6">
+            <div className="pt-5 mt-5  "  >
+            <h1 className="mt-5 pt-5 font-weight-bold text-white " >Our Team</h1>
+              <p className="text-white ">Here is a description of your team. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mattis turpis vel ex semper.</p>
+              <a className="font-weight-bold text-white " href="/volunteer" >Join Our Team</a>
+            </div>
           </div>
         </div>
       </div>
